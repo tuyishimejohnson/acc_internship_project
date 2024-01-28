@@ -8,7 +8,7 @@ import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   return (
     <>
-        <div className='bg-black text-xl text-white px-8 scroll-smooth'>
+        <div className='bg-black text-xl text-white px-8'>
           <div className='flex justify-between font-semibold py-5'>
             <img src={require('./Untitled (1).png')} alt="logo icon" className='w-8' />
               <nav>
