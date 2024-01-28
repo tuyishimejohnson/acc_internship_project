@@ -49,13 +49,11 @@ const Header = () => {
                   <div className='block mb-3'>
                     <label htmlFor="name">Names</label>
                     <input type="text" id='name' placeholder='Your names' className='w-full text-gray-600'/>
-                  </div>
-                  
+                  </div>                 
                   <div className='block mb-3'>
                     <label htmlFor="email">Email</label>
                     <input type="email" id='email' placeholder='Your email' className='w-full text-gray-600'/>
                   </div>
-
                   <div className='block mb-3'>
                     <label htmlFor="message">Your Message</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder='Your message' className='w-full text-gray-600'></textarea>
@@ -77,7 +75,6 @@ const Header = () => {
             </div>
           </footer>
         </div>
-
         <div className='bg-slate-700 py-8'>
               <nav>
                 <ul className='flex justify-center gap-5 text-center text-white'>
