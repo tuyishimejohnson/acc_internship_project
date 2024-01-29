@@ -1,18 +1,13 @@
 import React from 'react'
-import './header.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-
-const Header = () => {
+const Research = () => {
   return (
     <>
-        <div className='bg-black text-xl text-white px-8'>
-          <div className='flex justify-between font-semibold py-5'>
-            <img src={require('./Untitled (1).png')} alt="logo icon" className='w-8'/>
+        <div className='bg-black text-white text-xl px-8'>
+        <div className='flex justify-between font-semibold py-5'>
+            <img src={require('./Untitled (1).png')} alt="logo icon" className='w-8' />
               <nav>
                   <ul className='flex gap-6 items-center justify-center'>
                       <li className="hover:bg-slate-400 rounded-sm"><a href="#profile">Profile</a></li>
@@ -23,27 +18,28 @@ const Header = () => {
                   </ul>
               </nav>
           </div>
-          <div className='flex py-10'>
-            <h1 className='py-10 w-2/4 text-center font-extrabold text-6xl'>Learning new things everyday is <br />  the key to wisdom. Please LEARN</h1>  
-            <img src={require('./gettyimages-1414982113.png')} alt="" className='w-2/4 rounded-lg'/>     
-          </div>
-          <h2 id='profile' className='w-2/4 text-center font-extrabold text-4xl my-8'>Profile</h2>
-          <div className='flex justify-between'>
-            <img src={require('./1-intro-photo-final.jpg')} alt="" className='w-2/4 rounded-e-full'/>
+        <h2 className='font-extrabold text-4xl py-20 text-center'>Researches</h2>
+        <div className='flex gap-7'>
             <div>
-              <h3 className='text-center py-5 font-extrabold text-3xl'>About Me</h3>
-              <p className='text-center px-6 text-3xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci fugiat, deserunt praesentium cupiditate necessitatibus eaque vitae iure, exercitationem libero doloribus quidem aperiam non. Quod animi eveniet, consequatur itaque provident deleniti!</p>
-              <div className='flex gap-4 items-center my-8 text-sm justify-center'>
-                < FontAwesomeIcon icon={faEnvelope } />
-                <p>sample@gmail.com</p>
-                < FontAwesomeIcon icon={faPhone} />
-                <p>+25076888888</p>
-                < FontAwesomeIcon icon={faMapMarker} />
-                <p>Kg 38 St Kigali, Rwanda</p>
-              </div>
+                <h3 className='font-extrabold text-2xl my-4 text-center'>Research1</h3>
+                <img src={require('./L2u9aY5uuAOp1STLEzjhy3ttStLVC00wR7cpxesT.jpg')} alt="" className='rounded-2xl'/>
+                <p className='text-center border-2 rounded'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo hic esse natus corporis iure officia qui quo vel accusamus numquam perspiciatis eos repudiandae deserunt adipisci, similique officiis modi impedit quis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo dolorem similique quia magnam modi, ad ipsum. Illo, nemo modi? Aspernatur inventore eos laudantium ratione quod nesciunt enim vel esse!</p>
+                <div className='flex items-center justify-center'>
+                    <button className='px-6 py-4 border'>Read more</button>
+                </div>
+                
             </div>
-          </div>
-          <h2 className='font-extrabold text-3xl w-2/4 text-center my-9'>Contact me</h2>
+            <div>
+                <h3 className='font-extrabold text-2xl my-4 text-center'>Research2</h3>
+                <img src={require('./L2u9aY5uuAOp1STLEzjhy3ttStLVC00wR7cpxesT.jpg')} alt="" className='rounded-2xl'/>
+                <p className='text-center border-2 rounded'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo hic esse natus corporis iure officia qui quo vel accusamus numquam perspiciatis eos repudiandae deserunt adipisci, similique officiis modi impedit quis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo dolorem similique quia magnam modi, ad ipsum. Illo, nemo modi? Aspernatur inventore eos laudantium ratione quod nesciunt enim vel esse!</p>
+                <div className='flex items-center justify-center'>
+                    <button className='px-6 py-4 border'>Read more</button>
+                </div>
+                
+            </div>
+        </div>
+        <h2 className='font-extrabold text-3xl w-2/4 text-center my-9'>Contact me</h2>
           <footer className='bg-slate-800 flex justify-between px-7 py-8'>
             <form action="">
               <fieldset>
@@ -75,9 +71,9 @@ const Header = () => {
                 referrerpolicy="no-referrer-when-downgrade" 
                 frameborder="0"></iframe>
             </div>
-          </footer>
-        </div>
-        <div className='bg-slate-700 py-8'>
+          </footer>  
+    </div>
+    <div className='bg-slate-700 py-8'>
               <nav>
                 <ul className='flex justify-center gap-5 text-center text-white'>
                   <li className='hover:text-gray-400'><a href="#profile">Profile</a></li>
@@ -87,9 +83,13 @@ const Header = () => {
                   <li className='hover:text-gray-400'><a href="#dashboard">Dashboard</a></li>
                 </ul>
               </nav>
-          </div>  
+          </div>
     </>
+    
+
+    
+    
   )
 }
 
-export default Header
+export default Research
