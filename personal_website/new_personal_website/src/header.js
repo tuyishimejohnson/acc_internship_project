@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
@@ -14,9 +15,9 @@ const Header = () => {
               <nav>
                   <ul className='flex gap-6 items-center justify-center'>
                       <li className="hover:bg-slate-400 rounded-sm"><a href="#profile">Profile</a></li>
-                      <li className="hover:bg-slate-400 rounded-sm"><a href="#courses">Courses</a></li>
-                      <li className="hover:bg-slate-400 rounded-sm"><a href="research">Research</a></li>
-                      <li className="hover:bg-slate-400 rounded-sm"><a href="services">Services</a></li>
+                      <li className="hover:bg-slate-400 rounded-sm"><a href="#courses">Courses<FontAwesomeIcon icon={faCaretDown} className='px-2 items-center'/></a></li>
+                      <li className="hover:bg-slate-400 rounded-sm"><a href="research">Research<FontAwesomeIcon icon={faCaretDown} className='px-2 items-center'/></a></li>
+                      <li className="hover:bg-slate-400 rounded-sm"><a href="services">Services<FontAwesomeIcon icon={faCaretDown} className='px-2 items-center'/></a></li>
                       <li className="hover:bg-slate-400 rounded-sm"><a href="dashboard">Dashboard</a></li>
                   </ul>
               </nav>
@@ -58,7 +59,7 @@ const Header = () => {
                     <label htmlFor="message">Your Message</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder='Your message' className='w-full text-gray-600'></textarea>
                   </div>
-                  <button type="submit" className='px-4 py-3 rounded-sm border hover:bg-white text-white'>Send message</button>
+                  <button type="submit" className='px-4 py-3 rounded-sm block w-2/4 justify-center border hover:bg-gray-500 text-white'>Send message</button>
                 </div>
               </fieldset>
             </form>
