@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-
+import Research from './research';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -17,15 +17,15 @@ const Header = () => {
                   <ul className='flex gap-6 items-center justify-center'>
                       <li className="hover:bg-slate-400 rounded-sm"><a href="#profile">Profile</a></li>
                       <li className="hover:bg-slate-400 rounded-sm"><a href="#courses">Courses<FontAwesomeIcon icon={faCaretDown} className='px-2 items-center'/></a></li>
-                      <li className="hover:bg-slate-400 rounded-sm"><a href="research">Research<FontAwesomeIcon icon={faCaretDown} className='px-2 items-center'/></a></li>
+                      <li className="hover:bg-slate-400 rounded-sm"><a href="#research">Research<FontAwesomeIcon icon={faCaretDown} className='px-2 items-center'/></a></li>
                       <li className="hover:bg-slate-400 rounded-sm"><a href="services">Services<FontAwesomeIcon icon={faCaretDown} className='px-2 items-center'/></a></li>
-                      <li className="hover:bg-slate-400 rounded-sm"><a href="dashboard">Dashboard</a></li>
+                      <li className="hover:bg-slate-400 rounded-sm"><a href="#dashboard">Dashboard</a></li>
                   </ul>
               </nav>
           </div>
           <div className='flex py-10'>
             <h1 className='py-10 w-2/4 text-center font-extrabold text-6xl'>Learning new things everyday is <br />  the key to wisdom. Please LEARN</h1>  
-            <img src={require('./gettyimages-1414982113.png')} alt="" className='w-2/4 rounded-lg'/>     
+            <img src={require('./pexels-life-of-pix-7974.jpg')} alt="" className='w-2/4 rounded-lg'/>     
           </div>
           <h2 id='profile' className='w-2/4 text-center font-extrabold text-4xl my-8'>Profile</h2>
           <div className='flex justify-between'>
@@ -87,8 +87,11 @@ const Header = () => {
                   <li className='hover:text-gray-400'><a href="#dashboard">Dashboard</a></li>
                 </ul>
               </nav>
-          </div>  
+      
+          </div> 
+          < Research/> 
     </>
+    
   )
 }
 
