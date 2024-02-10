@@ -1,6 +1,5 @@
 import React from 'react'
 import './header.css'
-import Research from './research';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +11,7 @@ const Header = () => {
     <>
         <div className='bg-black text-xl text-white px-8'>
           <div className='flex justify-between font-semibold py-5'>
-            <img src={require('./Untitled (1).png')} alt="logo icon" className='w-8'/>
+            <img src={require('./Untitled (1).png')} alt="logo icon" className='w-12'/>
               <nav>
                   <ul className='flex gap-6 items-center justify-center'>
                       <li className="hover:bg-slate-400 rounded-sm"><a href="#profile">Profile</a></li>
@@ -22,6 +21,10 @@ const Header = () => {
                       <li className="hover:bg-slate-400 rounded-sm"><a href="#dashboard">Dashboard</a></li>
                   </ul>
               </nav>
+              <div>
+                <button className='bg-blue-600 px-3 py-2 rounded hover:bg-blue-500'>Login</button>
+                <button className='bg-gray-600 px-3 py-2 rounded hover:bg-gray-500'>Sign Up</button>
+              </div>
           </div>
           <div className='flex py-10'>
             <h1 className='py-10 w-2/4 text-center font-extrabold text-6xl'>Learning new things everyday is <br />  the key to wisdom. Please LEARN</h1>  
@@ -60,7 +63,7 @@ const Header = () => {
                     <label htmlFor="message">Your Message</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder='Your message' className='w-full text-gray-600'></textarea>
                   </div>
-                  <button type="submit" className='px-4 py-3 rounded-sm block w-2/4 justify-center border hover:bg-gray-500 text-white'>Send message</button>
+                  <button type="submit" className='px-4 py-3 rounded-sm block w-2/4 justify-center border hover:bg-white hover:text-gray-500'>Send message</button>
                 </div>
               </fieldset>
             </form>
@@ -89,7 +92,7 @@ const Header = () => {
               </nav>
       
           </div> 
-          < Research/> 
+                
     </>
     
   )

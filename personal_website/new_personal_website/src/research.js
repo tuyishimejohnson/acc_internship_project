@@ -7,7 +7,7 @@ const Research = () => {
     <>
       <div className='bg-black text-white text-xl px-8'>
             <div className='flex justify-between font-semibold py-5'>
-                <img src={require('./Untitled (1).png')} alt="logo icon" className='w-8' />
+                <img src={require('./Untitled (1).png')} alt="logo icon" className='w-12' />
                   <nav>
                       <ul className='flex gap-6 items-center justify-center'>
                           <li className="hover:bg-slate-400 rounded-sm"><a href="#profile">Profile</a></li>
@@ -17,6 +17,10 @@ const Research = () => {
                           <li className="hover:bg-slate-400 rounded-sm"><a href="dashboard">Dashboard</a></li>
                       </ul>
                   </nav>
+                  <div>
+                    <button className='bg-blue-600 px-3 py-2 rounded hover:bg-blue-500'>Login</button>
+                    <button className='bg-gray-600 px-3 py-2 rounded hover:bg-gray-500'>Sign Up</button>
+                  </div>
               </div>
             <h2 className='font-extrabold text-4xl py-20 text-center'>Researches</h2>
             
@@ -53,7 +57,7 @@ const Research = () => {
                           <label htmlFor="message">Your Message</label>
                           <textarea name="message" id="message" cols="30" rows="10" placeholder='Your message' className='w-full text-gray-600'></textarea>
                         </div>
-                        <button type="submit" className='px-4 py-3 rounded-sm block w-2/4 justify-center border hover:bg-gray-500 text-white'>Send message</button>
+                        <button type="submit" className='px-4 py-3 rounded-sm block w-2/4 justify-center border hover:bg-white hover:text-gray-500'>Send message</button>
                       </div>
                     </fieldset>
                   </form>
