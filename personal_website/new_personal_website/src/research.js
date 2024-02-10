@@ -30,13 +30,13 @@ const Research = () => {
                 <h3 className='font-extrabold text-2xl text-center w-2/4 absolute'>Research1</h3>
                     <img src={require('./Manufacturing-tech-Jan-18-2023-web.png')} alt="" className='w-full rounded opacity-50'/>
                         <p className='absolute  py-9 px-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo hic esse natus corporis iure officia qui quo vel accusamus numquam perspiciatis eos repudiandae deserunt adipisci, similique officiis modi impedit quis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo dolorem similique quia magnam modi, ad ipsum. Illo, nemo modi? Aspernatur inventore eos laudantium ratione quod nesciunt enim vel esse!</p>
-                        <button className='absolute bottom-10 border px-7 py-4 bg-gray-400 rounded-full hover:bg-gray-300'>Read more</button>
+                        <button className='absolute bottom-10 border-gray-400 px-7 py-4 bg-gray-400 rounded-full hover:bg-gray-300 hover:text-gray-500'>Read more</button>
                 </div>
                 <div className='w-2/4 flex justify-center text-center relative'>
                 <h3 className='font-extrabold text-2xl text-center w-2/4 absolute'>Research2</h3>
                     <img src={require('./images.jpg')} alt="" className='w-full rounded opacity-50'/>
                     <p className='absolute  py-9 px-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo hic esse natus corporis iure officia qui quo vel accusamus numquam perspiciatis eos repudiandae deserunt adipisci, similique officiis modi impedit quis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo dolorem similique quia magnam modi, ad ipsum. Illo, nemo modi? Aspernatur inventore eos laudantium ratione quod nesciunt enim vel esse!</p>
-                    <button className='absolute bottom-10 border px-7 bg-gray-400 rounded-full py-4 hover:bg-gray-300'>Read more</button>
+                    <button className='absolute bottom-10 border-gray-400 px-7 bg-gray-400 rounded-full py-4 hover:bg-gray-300 hover:text-gray-500'>Read more</button>
                 </div>
               </div>
 
