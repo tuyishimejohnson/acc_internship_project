@@ -1,14 +1,14 @@
-import Header from './header';
-import Courses from './courses_1';
-import Research from './research';
+import React from "react";
+import Header from "./header";
+import Research from "./research";
+import NewFooter from "./newFooter";
 
 function App() {
   return (
     <div className="App">
-
-      < Header />
-      < Research />
-      < Courses />
+      {/* <Header /> */}
+      <Research />
+      {/* <NewFooter /> */}
     </div>
   );
 }
